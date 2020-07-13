@@ -28,7 +28,7 @@ class Verb{
     public function firstLetter($lastLetter) {
         $back = [];
         foreach($lastLetter as $value) {
-            if(!strstr("rtcdb", $value[strlen($value)-8])) {
+            if(!strstr("rtcdb", $value[strlen($value)-(strlen($value)-2)])) {
                 array_push($back, $value);
             }
         }
