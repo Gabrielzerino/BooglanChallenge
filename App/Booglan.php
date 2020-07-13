@@ -16,6 +16,9 @@ class Booglan {
     private $verbFirst;
     private $countPrep;
     private $countVerb;
+    private $letterToNumber;
+    private $orderWords;
+
 
     public function __construct($text) {
         $this->textArr = explode(" ", $text);
