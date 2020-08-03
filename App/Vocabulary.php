@@ -51,7 +51,7 @@ class Vocabulary{
             $index++;
             /*Exception for words that have the same begining but not the same number of letters*/
             if ($index >= count($s1)||$index >= count($s2)) {
-                if (count($s1) != count($s2) && ($this->orderBy[$c1] - $this->orderBy[$c2] == 0)) {
+                if ($this->orderBy[$c1] - $this->orderBy[$c2] == 0) {
                     return count($s1) - count($s2);
                 }
                 return $this->orderBy[$c1] - $this->orderBy[$c2];
